@@ -20,7 +20,7 @@ document.settingsForm.addEventListener('submit', (e) => {
 			const url = e.target['url'].value.trim();
 			const upd = parseInt(e.target['update']?.value) || 0;
 			
-            iptv.setUpdateInteval(upd).loadURL(url, () => {
+			iptv.setUpdateInteval(upd).loadURL(url, () => {
 				document.getElementById('settings').close();
 			});
 			
@@ -38,3 +38,4 @@ document.settingsForm.addEventListener('submit', (e) => {
 });
 
 console.log('app.js took %f ms to complete.', (performance.now() - starttime).toFixed(3));
+
