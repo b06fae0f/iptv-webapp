@@ -901,7 +901,7 @@ IptvPlayer.prototype.play = function(item) {
 	localStorage.setItem('LastActiveItem', item.id);
 };
 
-IptvPlayer.prototype.setUpdateInteval = function(updateInterval) {
+IptvPlayer.prototype.setUpdateInterval = function(updateInterval) {
 	localStorage.setItem('PlaylistUpdateInterval', updateInterval);
 	return this;
 };
